@@ -1,0 +1,269 @@
+/* general */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #757575;
+}
+
+p {
+  font-size: 14px;
+}
+
+i {
+  margin-right: 15px;
+  color: #009688;
+}
+
+.ip {
+  padding-left: 15px;
+}
+
+/* main - layout of main */
+.container {
+  width: 95%;
+  margin: 25px auto;
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "a c";
+  grid-template-columns: 1fr 2.5fr;
+  gap: 20px;
+}
+
+/* main - biographic */
+.profile {
+  grid-area: a;
+  box-shadow: 0px 9px 17px 21px rgba(0, 0, 0, 0.1);
+  line-height: 2rem;
+  background-color: #ffffff;
+}
+
+.profile img {
+  width: 100%;
+}
+
+.img h2{
+  text-align: center;
+}
+
+.profile i {
+  font-size: 15px;
+}
+
+.profile .skills {
+  padding: 15px;
+}
+
+.profile .skills h2,
+i {
+  font-size: 20px;
+}
+ /* main - biographic - bars */
+.skills .bar {
+  height: 18px;
+  background-color: #e4e4e4;
+  border-radius: 20px;
+}
+
+.skills .bar .in_div {
+  width: 90%;
+  background-color: #009688;
+  border-radius: 20px;
+  height: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.skills .bar .in_div_1 {
+  width: 80%;
+  background-color: #009688;
+  border-radius: 20px;
+  height: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.skills .bar .in_div_2 {
+  width: 75%;
+  background-color: #009688;
+  border-radius: 20px;
+  height: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.skills .bar .in_div_3 {
+  width: 50%;
+  background-color: #009688;
+  border-radius: 20px;
+  height: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.profile .lang {
+  padding: 15px;
+}
+
+.profile .lang h2,
+i {
+  font-size: 17px;
+}
+
+.lang .bar {
+  height: 20px;
+  background-color: #e4e4e4;
+  border-radius: 20px;
+}
+
+.lang .bar .eng {
+  width: 100%;
+  background-color: #009688;
+  border-radius: 20px;
+  height: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.lang .bar .spanish {
+  width: 50%;
+  background-color: #009688;
+  border-radius: 20px;
+  height: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.lang .bar .ger {
+  width: 25%;
+  background-color: #009688;
+  border-radius: 20px;
+  height: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* main - exprience and education */
+.exp{
+  grid-area: b;
+}
+
+.edu{
+  grid-area: c;
+}
+
+.exp,
+.edu {
+  box-shadow: 0px 9px 17px 21px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.exp h2,
+.edu h2 {
+  margin-bottom: 1.5em;
+  font-weight: lighter;
+}
+
+.exp h3,
+p,
+p > i,
+.edu h3,
+p,
+p > i {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-family: "Roboto";
+  font-size: 15px;
+}
+
+.exp .text,
+.edu .text {
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.exp .date,
+.edu .date {
+  color: #009688;
+}
+.exp .date span {
+  background-color: #009688;
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+/* footer */
+footer{
+  background-color: #009688;
+  height: 20vh;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+  font-family: 'Roboto';
+  font-size: 12px;
+}
+
+footer a{
+  color: white;
+}
+
+footer svg{
+  width: 15px;
+}
+
+footer svg:hover{
+  opacity: 0.5;
+}
+
+/* media query */
+@media (min-width: 350px) and (max-width: 786px) {
+  .container {
+    display: block;
+    margin: 25px auto;
+  }
+
+  .profile, .exp, .edu{
+    margin-bottom: 30px;
+  }
+
+}
+
+
+
